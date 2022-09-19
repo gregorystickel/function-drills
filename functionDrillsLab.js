@@ -12,7 +12,11 @@
 */
 
 //CODE HERE
-
+function helloWorld() {
+  console.log(`Hello, world!`);
+  return;
+} 
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,6 +25,8 @@
 */
 
 //CODE HERE
+const jsNinja = () => {return 'I am a JavaScript ninja!';}
+console.log(jsNinja());
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -31,7 +37,12 @@
 */
 
 //CODE HERE
-
+let firstName = `Greg`;
+function printName(personName) {
+  let name = personName;
+  console.log(name);
+}
+printName(firstName);
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,7 +55,11 @@
 */
 
 //CODE HERE
-
+let enteredName =`Joe`
+function greeting(name) {
+  console.log(`Hello ${name}`);
+}
+greeting(enteredName);
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -58,7 +73,8 @@
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => { let result = num1 >= num2 ? num1 : num2; return result;}
+console.log(compareNums(8, 10));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -69,7 +85,13 @@
 */
 
 //CODE HERE
-
+function add (x, y) {
+  let firstNum = Number(x);
+  let secondNum = Number(y);
+  return x + y;
+}
+let sum = add(11, 22);
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
