@@ -106,7 +106,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -121,9 +121,9 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+// console.log('expression') **************************************?
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -146,7 +146,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -160,7 +160,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+let nameGreeting = 'Bryan';
 
+function nameCheck(name) {
+  if (name === `Steven`){
+    return `What is up Steven?`;
+  } else if (name === `Bryan` ) {
+    return  `Hey Bryan!`;
+  } else {
+    return `Cool name, ${name}`;
+  } 
+
+}
+console.log(nameCheck(nameGreeting));
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -173,7 +185,20 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder(color) {
+  if (color === `red`){
+    return 'red is a great color';
+  } else if (color === `green`) {
+    return `green is a solid favorite color`;
+  } else if (color === `balck`) {
+    return 'so trendy';
+  } else {
+    return 'you need to evaluate your favorite color choice';
+  }
 
+}
+let colorRating = 'green';
+console.log(faveColorFinder(colorRating));
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -184,7 +209,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function printAllNames (names) {
+  for (i =  0; i < names.length; i ++) {
+    console.log(names[i]);
+  }
+}
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -195,6 +225,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function thatsOdd (number) {
+   result = number % 2 === 0 ? "That's not odd!" : "That is odd indeed!";
+   return result;
+}
+let oddChecker = thatsOdd(9);
+console.log(oddChecker);
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -208,7 +244,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+const bestMovie = (movieTitle) => `${movieTitle} is the best movie ever!`;
+console.log(bestMovie(`Sharknado`));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -222,7 +259,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-
+function bigOrSmall(arr) {
+  let answers = [];
+  for (i = 0; i < arr.length; i ++) {
+    if (arr[i] > 100) {
+      answers.push('big'); 
+      } else {
+      answers.push(`small`);
+      }
+  }
+  return answers;
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -233,6 +282,14 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(contestants_array, loser1) {
+   for (i = 0; i < contestants_array.length; i++) {
+    if (contestants_array[i] === loser1) {
+    contestants_array.splice(i, 1);
+    }
+    return contestants_array;
+  }
+  console.log(theEliminator(contestants, loser));
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -313,4 +370,4 @@ let bathroomScope = []
 let bathtubScope = []
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope []                        
